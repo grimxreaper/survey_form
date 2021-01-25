@@ -10,135 +10,104 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300&family=Sofia&display=swap" rel="stylesheet">
 
 
-body {
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-#title {
-  font-family: 'El Messiri', sans-serif;
-  color: #7A72F0;
-}
-
-#description {
-  font-family: 'El Messiri', sans-serif;
-  color: #F072A9;
-}
-
-h3 {
-  color: #FFA0C9;
-}
-
-p {
-  color: #FA8C8C;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.125rem;
-}
-
-button {
-  display: none
-}
-
-.form-group {
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  color: #F072A9;
-  display: inline-block;
-  margin-right: 0.625rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  margin: 0 auto 1.25rem auto;
-}
-
-
-
-
-<style type="text/css">
-
-.form-style {
-  max-width: 450px;
-  font-family: 'Nunito', sans-serif;
-}
-
-.form-style label{
-  display: block;
-  margin-bottom: 20px;
-}
-.form-style label > span {
-  float: left;
-  width: 100px;
-  color: #F072A9;
-  font-weight: bold;
-  font-size: 15px;
-  text-shadow: 1px 1px 1px #fff;
-}
-
-/* border */
-.form-style fieldset {
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  margin: 0px 0px 10px 0px;
-  border: 1px solid #FFD2D2;
-  padding: 20px;
-  background: #FFF4F4;
-  box-shadow: inset 0px 0px 15px #FFE5E5;
-  width: 50%
-  
-}
-
-.form-style fieldset legend {
-  color: #FFA0C9;
-  border-top: 1px solid #FFD2D2;
-  border-left: 1px solid #FFD2D2;
-  border-right: 1px solid #FFD2D2;
-  border-radius: 5px 5px 0px 0px;
-  -webkit-border-radius: 5px 5px 0px 0px;
-  -moz-border-radius: 5px 5px 0px 0px;
-  background: #f4f4ff;
-  padding: 0px 8px 3px 8px;
-  box-shadow: -0px -1px 2px #F1F1F1;
-  font-weight: normal;
-  font-size: 15px;
-  
-}
-.form-style textarea {
-  width: 350px;
-  height: 100px;
-}
-.form-style input[type=text],
-.form-style input[type=number],
-.form-style input[type=email],
-.form-style select,
-.form-style textarea {
-  border-radius: 3px;
-  border: 1px solid #FFC2DC;
-  outline: none;
-  color: #F072A9;
-  padding: 5px 8px 5px 8px;
-  box-shadow: inset 1px 1px 4px #FFD5E7;
-  background: #FFEFF6;
-  width: 70%;
-}
-
-.form-style input[type=submit],
-.form-style input[type=button] {
-  background: #EB3B88;
-  border: 1px solid #C94A81;
-  padding: 5px 15px 5px 15px;
-  color: #FFCBE2;
-  box-shadow: inset -1px -1px 3px #FF62A7;
-  border-radius: 3px;
-  border-radius: 3px;
-  font-weight: bold;
-}
-
-.required {
-  color: red;
-  font-weight: normal;
-}
-
-</style>
-
-</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=El+Messiri&family=Montserrat:wght@300&family=Sofia&display=swap');
+    </style>
+    
+    
+      <h1 id="title">We would love to hear your feedback!</h1>
+    <p id="description">We would love to hear about your experience with our non-profit organization. Please fill out the form below. </p>
+    
+    <div class="form-style">
+    <form id="survey-form">
+      <fieldset><legend>Personal Details</legend>
+        <label id="name-label" for="input1"><span>Name<span class="required">*</span></span><input id="name" type="text" class="input-field" name="input1" value="" placeholder="enter your name" required /></label>
+        
+        <label id="email-label" for="input2"><span>Email<span class="required">*</span></span><input id="email" type="email" class="input-field" name="input2" value="" placeholder="enter your email" required/></label>
+        
+        <label id="number-label" for="input3"><span>Age<span class="required">*</span></span><input id="number" type="number" class="input-field" name="input3" min="10"max="99" value="" placeholder="enter your age"/></label>
+        
+        <label id="dropdown" for="input3"><span>Subject</span><select name="input4" class="select-field">
+          
+          <option value="1:1 consultations">1:1 Consultations</option>
+          <option value="Online Classes">Online Classes</option>
+          <option value="In-Person Event">In-Person Event</option></select></label>
+      </fieldset>
+      
+         
+        
+      <fieldset><legend>Message</legend>
+        <label for="input7"><span>Message</span><textarea name="input7" class="textarea-field"></textarea></label>
+    <!--     <label><span></span><input type="submit" value="Submit"/></label> -->
+      </fieldset>
+      
+      
+      <!--   Adding in checkboxes and radio buttons -->
+    <!--   <fieldset><legend>Recommendation</legend>
+        <label for="input6"><span>Recommendation</span><textarea name="input6" class="input-radio"></textarea></label>
+      </fieldset> -->
+      
+      <div class="form-group">
+        <fieldset><legend>Recommendation</legend>
+        <h3>Would you recommend us?</h3>
+            <label for="user-recommend"><span><span class="required"></span></span>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+          />
+              Definitely</label>
+        <label>
+        <input
+           name="user-recommend"
+           value="maybe"
+           type="radio"
+           class="input-radio"
+               />
+          Maybe</label>
+        <label
+          ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+            />
+          Uncertain</label>
+          </fieldset>
+      </div>
+      
+      <div class="form-group">
+        <fieldset><legend>Improvement</legend>
+        <h3>What would you like to see improved?<span class="clue"> (Check all that apply)</span></h3>
+        <label>
+          <input
+            name:"prefer"
+            value="promptness in communication"
+            type="checkbox"
+            class="input-checkbox"/>
+          Promptness in communication</label>
+        <label>
+          <input
+          name="prefer"
+          value="more advanced material"
+          type="checkbox"
+          class="input-checkbox"/>
+          More advanced material</label>
+        <label>
+          <input
+           name="prefer"
+           value="added accountability"
+           type="checkbox"
+           class="input-checkbox"/>
+          Added accountability</label>
+          </fieldset>
+          </div>
+          <label><span></span><input type="submit" value="Submit"/></label>
+      <button id="submit"></button>
+    </form>
+    
+    </div>
+    </body>
 </html>
